@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.neural_network import MLPRegressor
 
-# Definimos los 3 casos a procesar iterativamente
+
 casos = [
 
     {"archivo": "oscilador_caso3_ergodico_moderado.dat", "titulo": "Caso 3: Sensibilidad a la Fase (Desfase $\delta=\pi/2$)"}
@@ -25,7 +25,7 @@ for caso in casos:
     print("Entrenando la Inteligencia Artificial (MLP)...")
     target_ruidoso = np.column_stack((x_ruido, y_ruido))
 
-    # Misma arquitectura robusta de tu diseño original
+ 
     mlp = MLPRegressor(hidden_layer_sizes=(100, 100),
                        activation='tanh',
                        solver='lbfgs',
@@ -41,8 +41,7 @@ for caso in casos:
     print("Generando imagen de grado académico...")
     plt.figure(figsize=(9, 7))
     
-    # Ajuste dinámico de visualización: El caso 2 tiene 5000 puntos, por lo que 
-    # necesitamos que el ruido sea más sutil (alpha menor, puntos más pequeños)
+
     es_caso2 = "Inconmensurable" in caso["titulo"]
     s_ruido = 1 if es_caso2 else 15
     alpha_ruido = 0.3 if es_caso2 else 0.5
@@ -62,4 +61,4 @@ for caso in casos:
     plt.savefig(nombre_img, dpi=300)
     print(f"-> Guardado exitosamente como {nombre_img}")
 
-print("\n¡Todo listo! Las nuevas figuras con los nudos topológicos se han generado.")
+    print("\n¡Todo listo! Las nuevas figuras con los nudos topológicos se han generado.")
