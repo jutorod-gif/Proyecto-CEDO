@@ -11,7 +11,7 @@ Eigen::MatrixXd construirDatasetLineal(double omega_x, double omega_y, double Ax
     for (int i = 0; i < N; i++) {
         double t = (t_max * i) / N;
 
-        // Ecuaciones de movimiento (como en la deducción hamiltoniana)
+       
         double x_real = Ax * std::cos(omega_x * t);
         double y_real = Ay * std::cos(omega_y * t + desfase);
 
