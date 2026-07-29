@@ -33,7 +33,7 @@ Para compilar y ejecutar este proyecto completo desde cero, necesitarás:
 
 ## Guía de Compilación y Ejecución Paso a Paso
 
-Sigue estos pasos en tu terminal para replicar todo el proyecto (generación de datos y reconstrucción con IA).
+Seguir estos pasos en el terminal para replicar todo el proyecto (generación de datos y reconstrucción con IA).
 
 ```bash
 # Crear un entorno virtual (opcional pero recomendado)
