@@ -35,9 +35,6 @@ Para compilar y ejecutar este proyecto completo desde cero, necesitarás:
 
 Sigue estos pasos en tu terminal para replicar todo el proyecto (generación de datos y reconstrucción con IA).
 
-### Paso 1: Preparar el Entorno de Python
-Es recomendable crear un entorno virtual e instalar las librerías necesarias para la Red Neuronal y la graficación.
-
 ```bash
 # Crear un entorno virtual (opcional pero recomendado)
 python -m venv venv
